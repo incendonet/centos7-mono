@@ -4,8 +4,8 @@ MAINTAINER bryanayers+dockerfile@gmail.com
 
 # Env setup
 ENV HOME /root
-ENV MONO_MAJOR 4.0.4
-ENV MONO_MINOR 1-0.xamarin.1
+ENV MONO_MAJOR 4.0
+ENV MONO_MINOR 4.1-0.xamarin.1
 WORKDIR ~/
 
 # Get updates and build deps
@@ -23,7 +23,7 @@ RUN \
 		libgdiplus0-3.12-1 \
 		mono-core-$MONO_MAJOR.$MONO_MINOR \
 		mono-data-$MONO_MAJOR.$MONO_MINOR \
+		mono-data-postgresql-3.12.1-0 \
 		mono-data-sqlite-$MONO_MAJOR.$MONO_MINOR \
 		mono-nunit-$MONO_MAJOR.$MONO_MINOR \
-		mono-web-$MONO_MAJOR.$MONO_MINOR \
-		mono-data-postgresql-3.12.1-0
+		mono-web-$MONO_MAJOR.$MONO_MINOR
