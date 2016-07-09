@@ -20,7 +20,7 @@ RUN \
 	rpm --import "http://keyserver.ubuntu.com/pks/lookup?op=get&search=0x3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF" && \
 	yum-config-manager --add-repo http://download.mono-project.com/repo/centos/ && \
 	yum -y install \
-		posgresql \
+		postgresql \
 		libgdiplus0-3.12-1 \
 		mono-core-$MONO_MAJOR.$MONO_MINOR \
 		mono-data-$MONO_MAJOR.$MONO_MINOR \
