@@ -4,8 +4,8 @@ MAINTAINER bryanayers+dockerfile@gmail.com
 
 # Env setup
 ENV HOME /root
-ENV MONO_MAJOR 4.0
-ENV MONO_MINOR 4.1-0.xamarin.1
+ENV MONO_MAJOR 4.2
+ENV MONO_MINOR 3.4-0.xamarin.1
 WORKDIR ~/
 
 # Get updates and build deps
@@ -20,6 +20,7 @@ RUN \
 	rpm --import "http://keyserver.ubuntu.com/pks/lookup?op=get&search=0x3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF" && \
 	yum-config-manager --add-repo http://download.mono-project.com/repo/centos/ && \
 	yum -y install \
+		posgresql \
 		libgdiplus0-3.12-1 \
 		mono-core-$MONO_MAJOR.$MONO_MINOR \
 		mono-data-$MONO_MAJOR.$MONO_MINOR \
