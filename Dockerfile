@@ -4,8 +4,8 @@ MAINTAINER bryanayers+dockerfile@gmail.com
 
 # Env setup
 ENV HOME /root
-ENV MONO_MAJOR 4.4
-ENV MONO_MINOR 2.11-0.xamarin.1
+ENV MONO_MAJOR 4.6
+ENV MONO_MINOR 0.245-0.xamarin.1
 WORKDIR ~/
 
 # Get updates and build deps
