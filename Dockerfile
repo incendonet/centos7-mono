@@ -1,6 +1,6 @@
 # Base OS
 FROM centos:7
-MAINTAINER bryanayers+dockerfile@gmail.com
+MAINTAINER info@incendonet.com
 
 # Env setup
 ENV HOME /root
