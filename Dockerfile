@@ -4,8 +4,8 @@ MAINTAINER info@incendonet.com
 
 # Env setup
 ENV HOME /root
-ENV MONO_MAJOR 4.6
-ENV MONO_MINOR 2.16-0.xamarin.1
+ENV MONO_MAJOR 4.8
+ENV MONO_MINOR 0.495-0.xamarin.1
 WORKDIR ~/
 
 # Get updates and build deps
@@ -24,7 +24,6 @@ RUN \
 		libgdiplus0-3.12-1 \
 		mono-core-$MONO_MAJOR.$MONO_MINOR \
 		mono-data-$MONO_MAJOR.$MONO_MINOR \
-		mono-data-postgresql-3.12.1-0 \
 		mono-data-sqlite-$MONO_MAJOR.$MONO_MINOR \
 		mono-nunit-$MONO_MAJOR.$MONO_MINOR \
 		mono-web-$MONO_MAJOR.$MONO_MINOR
