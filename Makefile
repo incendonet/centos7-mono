@@ -1,3 +1,3 @@
 
 build:
-	docker build -t centos7-mono:5.0.1.1 -f Dockerfile .
+	docker build -t centos7-mono:4.8.0.520 -f Dockerfile .
