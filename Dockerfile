@@ -5,7 +5,7 @@ MAINTAINER info@incendonet.com
 # Env setup
 ENV HOME /root
 ENV MONO_MAJOR 5.2
-ENV MONO_MINOR 0.215-0.xamarin.3.epel7
+ENV MONO_MINOR 0.224-0.xamarin.1.epel7
 WORKDIR ~/
 
 # Get updates and build deps
@@ -21,7 +21,7 @@ RUN \
 	yum-config-manager --add-repo http://download.mono-project.com/repo/centos/ && \
 	yum -y install \
 		postgresql \
-		libgdiplus0-3.12-1 \
+		libgdiplus0-4.2-0.xamarin.2.epel7 \
 		mono-core-$MONO_MAJOR.$MONO_MINOR \
 		mono-data-$MONO_MAJOR.$MONO_MINOR \
 		mono-data-sqlite-$MONO_MAJOR.$MONO_MINOR \
