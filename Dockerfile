@@ -29,5 +29,5 @@ RUN \
 		mono-data-sqlite-$MONO_MAJOR.$MONO_MINOR \
 		mono-nunit-$MONO_MAJOR.$MONO_MINOR \
 		mono-web-$MONO_MAJOR.$MONO_MINOR && \
-	yum clean all && \
-	rm -rf /var/cache/yum
+		yum clean all && \
+		rm -rf /var/cache/yum
