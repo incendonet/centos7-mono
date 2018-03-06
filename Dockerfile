@@ -4,8 +4,8 @@ MAINTAINER info@incendonet.com
 
 # Env setup
 ENV HOME /root
-ENV MONO_MAJOR 5.4
-ENV MONO_MINOR 1.6-0.xamarin.1.epel7
+ENV MONO_MAJOR 5.10
+ENV MONO_MINOR 0.140-0.xamarin.2.epel7
 WORKDIR ~/
 
 # Get updates and build deps
@@ -29,5 +29,5 @@ RUN \
 		mono-data-sqlite-$MONO_MAJOR.$MONO_MINOR \
 		mono-nunit-$MONO_MAJOR.$MONO_MINOR \
 		mono-web-$MONO_MAJOR.$MONO_MINOR && \
-	yum clean all && \
-	rm -rf /var/cache/yum
+		yum clean all && \
+		rm -rf /var/cache/yum
